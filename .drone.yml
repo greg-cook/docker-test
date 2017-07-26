@@ -1,5 +1,8 @@
 pipeline:
-  build:
-    image: library/docker
-    commands:
-      - build .
+  docker:
+    image: plugins/docker
+    username: gregcook
+    password: uSTehcUiZuqKXCd0
+    email: greg@gregcook.com
+    repo: gregcook/docker-test
+    tags: latest
