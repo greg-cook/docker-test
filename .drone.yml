@@ -2,6 +2,6 @@ pipeline:
   docker:
     image: plugins/docker
     repo: gregcook/docker-test
-    username: ${DOCKER_USERNAME}
-    password: ${DOCKER_PASSWORD}
+    username: $$DOCKER_USERNAME
+    password: $$DOCKER_PASSWORD
     tags: test
