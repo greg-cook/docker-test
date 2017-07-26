@@ -1,11 +1,6 @@
 pipeline:
   docker:
     image: plugins/docker
-    env:
-    - DOCKER_USERNAME=$$dockerUser
-    - DOCKER_PASSWORD=$$dockerPass
-    #- DOCKER_EMAIL=$$dockerMail
     repo: gregcook/docker-test
-    username: $DOCKER_USERNAME
-    password: $DOCKER_PASSWORD
     tags: test
+    secrets: [ docker_username, docker_password ]
