@@ -4,4 +4,4 @@ pipeline:
     repo: gregcook/docker-test
     username: ${DOCKER_USERNAME}
     password: ${DOCKER_PASSWORD}
-    tags: latest
+    tags: test
