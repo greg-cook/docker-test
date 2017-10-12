@@ -3,4 +3,5 @@ pipeline:
     image: docker
     commands:
       - docker build .
-
+    volumes: # Use of volumes requires repo to be 'trusted' in drone
+      - /var/run/docker.sock:/var/run/docker.sock # Mount the docker socket from host to utilise caching and local images
