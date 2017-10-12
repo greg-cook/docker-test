@@ -1,9 +1,6 @@
 pipeline:
   docker:
-    image: alpine
+    image: docker
     commands:
-      - echo $DOCKER_USERNAME
-      - echo $GEMFURY_TOKEN
-    #repo: gregcook/docker-test
-    #tags: test
-    secrets: [ docker_username, docker_password, gemfury_token ]
+      - docker build .
+
